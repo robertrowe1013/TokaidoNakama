@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 153732659}
   - component: {fileID: 153732658}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: PlayerThreeColorDropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5087,7 +5087,7 @@ GameObject:
   - component: {fileID: 900986945}
   - component: {fileID: 900986944}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: PlayerFiveColorDropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7216,13 +7216,13 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
+    - m_Text: Two Players
+      m_Image: {fileID: 0}
     - m_Text: Three Players
       m_Image: {fileID: 0}
     - m_Text: Four Players
       m_Image: {fileID: 0}
     - m_Text: Five Players
-      m_Image: {fileID: 0}
-    - m_Text: Two Players
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7441,7 +7441,7 @@ GameObject:
   - component: {fileID: 1357997323}
   - component: {fileID: 1357997322}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: PlayerFourColorDropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7968,7 +7968,7 @@ GameObject:
   - component: {fileID: 1430279611}
   - component: {fileID: 1430279610}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: PlayerOneColorDropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8688,7 +8688,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &1551372954
 GameObject:
   m_ObjectHideFlags: 0
@@ -9628,7 +9628,7 @@ GameObject:
   - component: {fileID: 1758702836}
   - component: {fileID: 1758702835}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: PlayerTwoColorDropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9989,7 +9989,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Three Players
+  m_Text: Two Players
 --- !u!222 &1784868015
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10486,17 +10486,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f498c2728b051479a6b44ed61915c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfPlayersDrop: {fileID: 1317560663}
   playerCount: 0
+  showPercentagesDrop: {fileID: 1792129622}
   showPercentages: 0
+  includeAchievementsDrop: {fileID: 1366618888}
   includeAchievements: 0
+  joIToggle: {fileID: 928550547}
   joIVar: 0
+  returnTripToggle: {fileID: 1146132794}
   returnTripVar: 0
+  gastroToggle: {fileID: 1117745637}
   gastroVar: 0
+  prepToggle: {fileID: 1542853100}
   prepVar: 0
+  playerOneColorDrop: {fileID: 1430279610}
   playerOneColor: 
+  playerTwoColorDrop: {fileID: 1758702835}
   playerTwoColor: 
+  playerThreeColorDrop: {fileID: 153732658}
   playerThreeColor: 
+  playerFourColorDrop: {fileID: 1357997322}
   playerFourColor: 
+  playerFiveColorDrop: {fileID: 900986944}
   playerFiveColor: 
 --- !u!1 &1907766905
 GameObject:
