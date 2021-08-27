@@ -19,15 +19,15 @@ public class SetupOptions : MonoBehaviour
     public Toggle prepToggle;
     public int prepVar;
     public Dropdown playerOneColorDrop;
-    public string playerOneColor;
+    public int playerOneColor;
     public Dropdown playerTwoColorDrop;
-    public string playerTwoColor;
+    public int playerTwoColor;
     public Dropdown playerThreeColorDrop;
-    public string playerThreeColor;
+    public int playerThreeColor;
     public Dropdown playerFourColorDrop;
-    public string playerFourColor;
+    public int playerFourColor;
     public Dropdown playerFiveColorDrop;
-    public string playerFiveColor;
+    public int playerFiveColor;
 
     void Start()
     {
@@ -82,11 +82,11 @@ public class SetupOptions : MonoBehaviour
         {
             prepToggle.isOn = false;
         }
-        playerOneColor = PlayerPrefs.GetString("playerOneColor");
-        playerTwoColor = PlayerPrefs.GetString("playerTwoColor");
-        playerThreeColor = PlayerPrefs.GetString("playerThreeColor");
-        playerFourColor = PlayerPrefs.GetString("playerFourColor");
-        playerFiveColor = PlayerPrefs.GetString("playerFiveColor");
+        playerOneColorDrop.value = PlayerPrefs.GetInt("playerOneColor");
+        playerTwoColorDrop.value = PlayerPrefs.GetInt("playerTwoColor");
+        playerThreeColorDrop.value = PlayerPrefs.GetInt("playerThreeColor");
+        playerFourColorDrop.value = PlayerPrefs.GetInt("playerFourColor");
+        playerFiveColorDrop.value = PlayerPrefs.GetInt("playerFiveColor");
     }
 
     void Update()
@@ -159,6 +159,96 @@ public class SetupOptions : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("prepVar", 0);
+        }
+        switch (playerOneColorDrop.value)
+        {
+            case 0:
+                PlayerPrefs.SetInt("playerOneColor", 0);
+                break;
+            case 1:
+                PlayerPrefs.SetInt("playerOneColor", 1);
+                break;
+            case 2:
+                PlayerPrefs.SetInt("playerOneColor", 2);
+                break;
+            case 3:
+                PlayerPrefs.SetInt("playerOneColor", 3);
+                break;
+            case 4:
+                PlayerPrefs.SetInt("playerOneColor", 4);
+                break;
+        }
+        switch (playerTwoColorDrop.value)
+        {
+            case 0:
+                PlayerPrefs.SetInt("playerTwoColor", 0);
+                break;
+            case 1:
+                PlayerPrefs.SetInt("playerTwoColor", 1);
+                break;
+            case 2:
+                PlayerPrefs.SetInt("playerTwoColor", 2);
+                break;
+            case 3:
+                PlayerPrefs.SetInt("playerTwoColor", 3);
+                break;
+            case 4:
+                PlayerPrefs.SetInt("playerTwoColor", 4);
+                break;
+        }
+        switch (playerThreeColorDrop.value)
+        {
+            case 0:
+                PlayerPrefs.SetInt("playerThreeColor", 0);
+                break;
+            case 1:
+                PlayerPrefs.SetInt("playerThreeColor", 1);
+                break;
+            case 2:
+                PlayerPrefs.SetInt("playerThreeColor", 2);
+                break;
+            case 3:
+                PlayerPrefs.SetInt("playerThreeColor", 3);
+                break;
+            case 4:
+                PlayerPrefs.SetInt("playerThreeColor", 4);
+                break;
+        }
+        switch (playerFourColorDrop.value)
+        {
+            case 0:
+                PlayerPrefs.SetInt("playerFourColor", 0);
+                break;
+            case 1:
+                PlayerPrefs.SetInt("playerFourColor", 1);
+                break;
+            case 2:
+                PlayerPrefs.SetInt("playerFourColor", 2);
+                break;
+            case 3:
+                PlayerPrefs.SetInt("playerFourColor", 3);
+                break;
+            case 4:
+                PlayerPrefs.SetInt("playerFourColor", 4);
+                break;
+        }
+        switch (playerFiveColorDrop.value)
+        {
+            case 0:
+                PlayerPrefs.SetInt("playerFiveColor", 0);
+                break;
+            case 1:
+                PlayerPrefs.SetInt("playerFiveColor", 1);
+                break;
+            case 2:
+                PlayerPrefs.SetInt("playerFiveColor", 2);
+                break;
+            case 3:
+                PlayerPrefs.SetInt("playerFiveColor", 3);
+                break;
+            case 4:
+                PlayerPrefs.SetInt("playerFiveColor", 4);
+                break;
         }
     }
 
